@@ -13,7 +13,7 @@ mov ds, ax
 xor ax, ax
 mov di, ax
 mov ax, 0x1f00
-mov cx, 64000
+mov cx, 2000
 rep stosw
 xor ax, ax
 mov ds, ax
