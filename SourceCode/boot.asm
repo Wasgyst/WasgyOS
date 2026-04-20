@@ -2,4 +2,6 @@
 xor ax, ax
 mov cs, ax
 mov ds, ax
+mov es, ax
 mov ss, ax
+mov ax, 0x7c00
