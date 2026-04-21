@@ -26,5 +26,7 @@ print:
   mov ah, 0x0e
   int 0x10
 done:
-  hlt
+  jmp $
 msg: db "Hello World!", 0
+times 510-($$-$) db 0
+dw 0x55AA
