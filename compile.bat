@@ -14,7 +14,7 @@ if errorlevel 2 goto exit
 if errorlevel 1 goto compilemenu1
 :compilemenu1
 cls
-set /p file=Which File (Without Extensions):
+set /p file=Which File (Or Path2File) (Without Extensions): 
 if not exist "%file%.asm" (
 echo %file% Doesnt Exist.
 pause
