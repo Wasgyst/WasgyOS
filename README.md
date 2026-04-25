@@ -17,4 +17,6 @@ Please contact ISP if there is any issues (For example if the download fails and
 # How To Install
 Insert the first floppy disc into the primary floppy disc (or A:)  
 Start the computer  
+Wait For Blue Screen
+Press Enter
 (It Will Continue More)
