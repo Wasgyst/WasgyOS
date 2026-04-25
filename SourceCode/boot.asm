@@ -26,7 +26,7 @@ print:
   int 0x10
   jmp print
 done:
-  jmp PCPoint
+  jmp word [PCPoint]
 msg: db "WasgyOS Setup", 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 13, "PRESS ENTER TO CONTINUE OR ESC TO EXIT", 0
 keywait:
 mov ah, 0x00
@@ -42,6 +42,6 @@ jmp continue1
 exit:
 jmp 0xFFFF:0x0000
 next:
-hlt
+jmp $
 times 510-($-$$) db 0
 dw 0x55AA
